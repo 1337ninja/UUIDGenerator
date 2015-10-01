@@ -40,7 +40,7 @@ public:
 	void SetNodeNumber(std::mt19937& PRNG)
 	{
 		/*This number is currently being randomly generated. In a distributed environment this would be known before-hand */
-		std::uniform_int_distribution<unsigned> uint_dist_long(1,65536);
+		std::uniform_int_distribution<unsigned> uint_dist_long(1,UINT16_MAX);
 		uuid.Node = uint_dist_long(PRNG) & 0xFFFF;
 	}
 
