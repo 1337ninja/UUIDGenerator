@@ -4,7 +4,7 @@
 #include <chrono>
 #include <iomanip>
 #include <sstream>
-
+#include <cstring>
 
 
 UUIDGenerator::UUIDGenerator() 
@@ -65,11 +65,11 @@ std::string UUIDGenerator::GenerateUUID(bool bPrettyPrint)
 
 	
 
-int main()
+int main(int argc, char *argv[])
 {
-	
+
 	UUIDGenerator uuid;
-	std::cout<< uuid.GenerateUUID();
+	argv[1] == NULL ? std::cout<< uuid.GenerateUUID() : strcmp(argv[1], "0") ? std::cout<< uuid.GenerateUUID() : std::cout<< uuid.GenerateUUID(false);
 
 	return 0;
 }
