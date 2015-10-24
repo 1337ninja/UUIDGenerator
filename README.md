@@ -1,7 +1,7 @@
 # UUIDGenerator
 A simple UUID generator using C++11.
 
-  This program is a simple **128 bit** UUID generator using C++11. Please note that this is **not an RFC4122 compliant** UUID. For more information on the RFC4122 compliant UUID, please refer https://www.ietf.org/rfc/rfc4122.txt. If you are looking for an RFC4122 compliant UUID , try [**Boost**](http://www.boost.org/doc/libs/1_59_0/libs/uuid/uuid.html) or you can try [**libuuid**](http://linux.die.net/man/3/uuid_generate) from **util-linux**.
+  This program is a simple **128 bit** UUID generator using C++11. Please note that this is **not an RFC4122 compliant** UUID. For more information on the RFC4122 compliant UUID, please refer [**RFC4122**](https://www.ietf.org/rfc/rfc4122.txt). If you are looking for an RFC4122 compliant UUID , try [**Boost**](http://www.boost.org/doc/libs/1_59_0/libs/uuid/uuid.html) or you can try [**libuuid**](http://linux.die.net/man/3/uuid_generate) from **util-linux**.
   
   The structure of this UUID generator is quite simple. It comprises of 3 parts,
   
